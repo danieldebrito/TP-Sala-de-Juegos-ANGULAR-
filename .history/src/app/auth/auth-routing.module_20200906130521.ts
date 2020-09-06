@@ -7,7 +7,7 @@ import { SendEmailComponent } from './send-email/send-email.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
-  { path: 'registro', component: RegisterComponent },
+  { path: 'register', component: RegisterComponent },
   { path: 'verificarEmail', component: SendEmailComponent }
 ];
 
