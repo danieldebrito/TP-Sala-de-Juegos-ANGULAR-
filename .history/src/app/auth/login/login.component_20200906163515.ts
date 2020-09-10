@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { AuthService } from 'src/app/auth/auth.service';
 import { Router } from '@angular/router';
-import { User } from 'src/app/auth/models/user.interface';
 
 @Component({
   selector: 'app-login',
@@ -20,36 +19,22 @@ export class LoginComponent {
 
   constructor(private authSvc: AuthService, private router: Router) { }
 
-  async onGoogleLogin() {
-    try {
-      const user = await this.authSvc.loginGoogle();
-      if (user) {
-        this.checkUserIsVerified(user);
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  }
-
   async onLogin() {
     const { email, password } = this.loginForm.value;
     try {
       const user = await this.authSvc.login(email, password);
-      if (user) {
-        this.checkUserIsVerified(user);
+      if (user && user.user.emailVerified) {
+        this.error = false;
+        this.router.navigate(['/home']);
+      } else if (user) {
+        this.error = false;
+        this.router.navigate(['/verificarEmail']);
+      } else {
+        this.error = true;
       }
-    } catch (error) {
-      console.log(error);
     }
-  }
-
-  private checkUserIsVerified(user: User) {
-    if (user && user.emailVerified) {
-      this.router.navigate(['/home']);
-    } else if (user) {
-      this.router.navigate(['/verification-email']);
-    } else {
-      this.router.navigate(['/registro']);
+    catch (error) {
+      console.log(error);
     }
   }
 }

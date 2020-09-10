@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { AuthService } from 'src/app/auth/auth.service';
 import { Router } from '@angular/router';
-import { User } from 'src/app/auth/models/user.interface';
 
 @Component({
   selector: 'app-login',
