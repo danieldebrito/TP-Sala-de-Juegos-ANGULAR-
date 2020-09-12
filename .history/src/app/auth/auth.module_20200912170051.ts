@@ -12,12 +12,7 @@ import { SendEmailComponent } from './send-email/send-email.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 @NgModule({
-  declarations: [
-    LoginComponent,
-    RegisterComponent,
-    SendEmailComponent,
-    ForgotPasswordComponent
-   ],
+  declarations: [LoginComponent, RegisterComponent, SendEmailComponent, ForgotPasswordComponent],
   imports: [
     CommonModule,
     AuthRoutingModule,

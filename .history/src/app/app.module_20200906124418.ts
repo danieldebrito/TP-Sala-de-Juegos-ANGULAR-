@@ -11,8 +11,13 @@ import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 // ============================== MODULES ==================================== //
+/*
+import { CrudModule } from './crud/crud.module';*/
 import { AuthModule } from './auth/auth.module';
 import { LayoutModule } from './layout/layout.module';
+/*
+import { EcommerceModule } from './ecommerce/ecommerce.module';
+*/
 
 @NgModule({
   declarations: [
@@ -21,11 +26,16 @@ import { LayoutModule } from './layout/layout.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    /*
+    CrudModule,*/
     AuthModule,
     LayoutModule,
-    // db -----------------------------------------------//
+    /*
+    EcommerceModule,*/
+    // firebase -----------------------------------------------//
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
+    // http ---------------------------------------------------//
     HttpClientModule
   ],
   providers: [
