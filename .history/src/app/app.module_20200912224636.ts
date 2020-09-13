@@ -14,19 +14,20 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AuthModule } from './auth/auth.module';
 import { LayoutModule } from './layout/layout.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { GridCardsModule } from 'src/app/grid_cards/grid-cards.module';
+
 
 
 @NgModule({
   declarations: [
     AppComponent
+
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AuthModule,
     LayoutModule,
-    GridCardsModule,
     // db -----------------------------------------------//
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,

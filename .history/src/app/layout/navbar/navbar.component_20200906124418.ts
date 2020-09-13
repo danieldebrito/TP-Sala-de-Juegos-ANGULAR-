@@ -24,8 +24,4 @@ export class NavbarComponent {
     }
   }
 
-  public console(user){
-    console.log(user);
-  }
-
 }
