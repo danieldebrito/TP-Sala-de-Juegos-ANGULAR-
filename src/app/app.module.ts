@@ -13,6 +13,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 // ============================== MODULES ==================================== //
 import { AuthModule } from './auth/auth.module';
 import { LayoutModule } from './layout/layout.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { LayoutModule } from './layout/layout.module';
     // db -----------------------------------------------//
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [
     BaseService
