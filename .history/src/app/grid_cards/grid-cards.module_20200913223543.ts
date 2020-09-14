@@ -16,12 +16,14 @@ import { MenuCardsComponent } from './menu-cards/menu-cards.component';
     MenuCardsComponent
   ],
   imports: [
-    JuegosRoutingModule,
     CommonModule,
-    JuegosModule
+    JuegosModule,
+    JuegosRoutingModule
   ],
   exports: [
-    MenuCardsComponent
+    JuegosRoutingModule,
+    MenuCardsComponent,
+    BoardComponent
   ]
 })
 export class GridCardsModule { }

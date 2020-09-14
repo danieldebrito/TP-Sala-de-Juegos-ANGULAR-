@@ -3,25 +3,23 @@ import { CommonModule } from '@angular/common';
 // modules
 import { JuegosModule } from 'src/app/grid_cards/juegos/juegos.module';
 // routing
-import { JuegosRoutingModule } from 'src/app/grid_cards/grid-cards-routing.module';
+import { GridCardsRoutingModule } from 'src/app/grid_cards/grid-cards-routing.module';
 // components
 import { BoardComponent } from './aa-board/aa-board.component';
 import { RankingComponent } from './ranking/ranking.component';
-import { MenuCardsComponent } from './menu-cards/menu-cards.component';
 
 @NgModule({
   declarations: [
+    JuegosModule,
     BoardComponent,
-    RankingComponent,
-    MenuCardsComponent
+    RankingComponent
   ],
   imports: [
-    JuegosRoutingModule,
     CommonModule,
-    JuegosModule
+    GridCardsRoutingModule
   ],
   exports: [
-    MenuCardsComponent
+    GridCardsRoutingModule
   ]
 })
 export class GridCardsModule { }

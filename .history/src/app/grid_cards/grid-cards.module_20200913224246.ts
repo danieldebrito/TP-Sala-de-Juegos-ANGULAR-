@@ -21,7 +21,8 @@ import { MenuCardsComponent } from './menu-cards/menu-cards.component';
     JuegosModule
   ],
   exports: [
-    MenuCardsComponent
+    MenuCardsComponent,
+    BoardComponent
   ]
 })
 export class GridCardsModule { }
