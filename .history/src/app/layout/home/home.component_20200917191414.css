@@ -2,8 +2,7 @@
     background-image: url("../../../assets/trama.jpg");
     background-repeat: repeat;
     background-color: rgba(0, 0, 0, 0.8);
-    font-size: 350%;
+    filter: brightness(1.5);
+    color: white;
     font-weight: bold;
-    color: greenyellow;
-    text-shadow: 0.1em 0.1em red;
 }

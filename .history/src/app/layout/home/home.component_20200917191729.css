@@ -1,0 +1,12 @@
+.jumbotron {
+    background-image: url("../../../assets/trama.jpg");
+    background-repeat: repeat;
+    background-color: rgba(0, 0, 0, 0.8);
+    filter: drop-shadow(5px 5px 10px #444);
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    font-weight: bold;
+}

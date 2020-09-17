@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // ============================== HTTP ==================================== //
 import { HttpClientModule } from '@angular/common/http';
 // ============================== SERVICE ==================================== //
@@ -14,9 +13,9 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 // ============================== MODULES ==================================== //
 import { AuthModule } from './auth/auth.module';
 import { LayoutModule } from './layout/layout.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GridCardsModule } from 'src/app/grid_cards/grid-cards.module';
-
-import { JuegosModule } from './juegos/juegos.module';
+import { JuegosModule } from './grid_cards/juegos/juegos.module';
 
 
 @NgModule({
