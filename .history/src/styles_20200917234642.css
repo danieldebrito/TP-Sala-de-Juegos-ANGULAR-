@@ -1,19 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
 .back_rojo {
-    background-color: #515070 !important;
+    background-color: #d32f2f !important;
 }
 
-.back_naranja {
-    background-color: #ff8e6e;
+.back_amarillo {
+    background-color: #E2E4AF;
 }
 
 .back_gris {
-    background-color: #f6f6f6;
+    background-color: #D9EFF2;
 }
 
-.back_dark {
-    background-color: #413C39;
+.back_green {
+    background-color: #99DD98;
 }
 
 html,

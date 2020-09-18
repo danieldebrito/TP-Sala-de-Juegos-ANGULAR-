@@ -10,7 +10,7 @@
 
 .text-responsive {
     font-size: calc(1em + 1vw);
-    line-height: 45px;
+    line-height: 25px;
 }
 
 @media screen and (min-width: 601px) {
@@ -21,6 +21,6 @@
 
 @media screen and (max-width: 600px) {
     div.text-responsive {
-        font-size: 40px;
+        font-size: 20px;
     }
 }

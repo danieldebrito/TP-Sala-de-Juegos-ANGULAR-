@@ -1,6 +1,5 @@
 .nav-link {
     font-size: 25px;
-    color: white !important;
 }
 
 .navbar-collapse {
@@ -18,8 +17,4 @@
 
 img {
     width: 140px;
-}
-
-.background {
-    background-color: red;
 }

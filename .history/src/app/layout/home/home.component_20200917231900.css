@@ -1,0 +1,9 @@
+.jumbotron {
+    background-image: url("../../../assets/trama.jpg");
+    background-repeat: repeat;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 350%;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0.05em 0.05em red;
+}
