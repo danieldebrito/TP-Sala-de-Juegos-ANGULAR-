@@ -6,10 +6,7 @@ import { CardsComponent } from './cards/cards.component';
 
 
 const routes: Routes = [
-  { path: 'juegos', component: BoardComponent, children: [
-    { path: '', component: CardsComponent},
-    // { path: 'adivina', component: AdivinaComponent}
-  ]}
+  { path: 'juegos', component: BoardComponent, children: [{ path: '', component: CardsComponent}]}
 ];
 
 @NgModule({

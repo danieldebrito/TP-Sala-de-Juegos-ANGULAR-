@@ -3,12 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { BoardComponent } from './board/board.component';
 import { CardsComponent } from './cards/cards.component';
+import { AdivinaComponent } from 'src/app/grid_cards/juegos/adivina/adivina.component';
 
 
 const routes: Routes = [
   { path: 'juegos', component: BoardComponent, children: [
     { path: '', component: CardsComponent},
-    // { path: 'adivina', component: AdivinaComponent}
+    { path: 'adivina', component: AdivinaComponent}
   ]}
 ];
 
