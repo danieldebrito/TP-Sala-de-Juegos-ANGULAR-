@@ -2,17 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AuthRoutingModule } from './auth-routing.module';
 import { AuthService } from './auth.service';
+import { LoginModule } from './login/login.module';
+import { ForgotPasswordModule } from './forgot-password/forgot-password.module';
+import { RegisterModule } from './register/register.module';
+import { SendEmailModule } from './send-email/send-email.module';
 
-import { LoginModule } from './pages/login/login.module';
-import { ForgotPasswordModule } from './pages/forgot-password/forgot-password.module';
-import { RegisterModule } from './pages/register/register.module';
-import { SendEmailModule } from './pages/send-email/send-email.module';
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
+    AuthRoutingModule,
     FormsModule,
     ReactiveFormsModule,
     LoginModule,

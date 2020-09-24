@@ -3,7 +3,6 @@ import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 
-
 @Component({
   selector: 'app-forgot-password',
   templateUrl: './forgot-password.component.html',

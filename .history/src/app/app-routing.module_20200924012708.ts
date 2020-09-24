@@ -5,19 +5,19 @@ import { HomeComponent } from './layout/home/home.component';
 const routes: Routes = [
   {
     path: 'login',
-    loadChildren: () => import('./auth/pages/login/login.module').then( m => m.LoginModule)
+    loadChildren: () => import('./auth/login/login.module').then( m => m.LoginModule)
   },
   {
     path: 'forgot-password',
-    loadChildren: () => import('./auth/pages/forgot-password/forgot-password.module').then( m => m.ForgotPasswordModule)
+    loadChildren: () => import('./auth/forgot-password/forgot-password.module').then( m => m.ForgotPasswordModule)
   },
   {
     path: 'registro',
-    loadChildren: () => import('./auth/pages/register/register.module').then( m => m.RegisterModule)
+    loadChildren: () => import('./auth/register/register.module').then( m => m.RegisterModule)
   },
   {
     path: 'verification-email',
-    loadChildren: () => import('./auth/pages/send-email/send-email.module').then( m => m.SendEmailModule)
+    loadChildren: () => import('./auth/send-email/send-email.component').then( m => m.SendEmailComponent)
   },
   {
     path: '',
