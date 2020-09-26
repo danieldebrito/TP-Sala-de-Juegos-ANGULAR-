@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { BoardComponent } from './games/components/board/board.component';
+import { LayoutComponent } from './games/components/layout/layout.component';
+import { AdivinaComponent } from './games/pages/adivina/adivina.component';
 
 const routes: Routes = [
   {
@@ -31,16 +33,16 @@ const routes: Routes = [
   },
   {
     path: 'juegos',
-    // loadChildren: () => import('./games/components/board/board.module').then(m => m.BoardModule),
-    component: BoardComponent,
+    loadChildren: () => import('./games/components/board/board.module').then(m => m.BoardModule),
+    // component: BoardComponent,
     children: [
       {
         path: '',
-        loadChildren: () => import('./games/components/layout/layout.module').then(m => m.LayoutModuleModule),
+        component: LayoutComponent,
       },
       {
         path: 'adivina',
-        loadChildren: () => import('./games/pages/adivina/adivina.module').then(m => m.AdivinaModule),
+        component: AdivinaComponent
       }
     ]
   }
