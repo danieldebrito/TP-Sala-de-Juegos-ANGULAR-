@@ -1,0 +1,51 @@
+[{
+        "name": "adivina",
+        "redirectTo": "adivina",
+        "img": "/assets/games/adivina.jpg",
+        "detalle": "Adiviná el numero",
+        "descripcion": "Trata de adivinar un numero entre cero y cien, donde tendras solo 5 oportunidades, vas a tener una ayuda, si no acertas, solo te dire si es mayor o menor, al numero correcto, suerte!!"
+    },
+    {
+        "name": "agilidad",
+        "redirectTo": "agilidad",
+        "img": "/assets/games/agilidad.jpg",
+        "detalle": "Agilidad Arismetica",
+        "descripcion": "Demostrá tu agilidad arismetica, resilviendo cuentas sumples antes de un tiempo determinado"
+    },
+    {
+        "name": "ppt",
+        "redirectTo": "ppt",
+        "img": "/assets/games/ppt.jpg",
+        "detalle": "piedra papel o tijera",
+        "descripcion": "El clasico juego"
+
+    },
+    {
+        "name": "tateti",
+        "redirectTo": "tateti",
+        "img": "/assets/games/tateti.jpg",
+        "detalle": "ta te ti",
+        "descripcion": "Antes lo jugabas en papel, ahora digital"
+    },
+    {
+        "name": "anagrama",
+        "redirectTo": "anagrama",
+        "img": "/assets/games/anagrama.jpg",
+        "detalle": "Anagrama",
+        "descripcion": "Busca la palabra mezclada entre cientos de posibilidades"
+    },
+    {
+        "name": "memotest",
+        "redirectTo": "memotest",
+        "img": "/assets/games/memotest.jpg",
+        "detalle": "Memotest",
+        "descripcion": "Alcoyana Alcoyama"
+    },
+    {
+        "name": "casaca",
+        "redirectTo": "casaca",
+        "img": "/assets/games/casaca.jpg",
+        "detalle": "Adiviná la casaca",
+        "descripcion": "Que sabes e casacas de futbol mundiales?"
+    }
+]

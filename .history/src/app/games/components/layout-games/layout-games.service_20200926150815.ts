@@ -17,7 +17,7 @@ export class LayoutGamesService {
   constructor( private http: HttpClient ) { }
 
   getGamesMenuItems(): any{
-    return this.http.get<GamesMenuItem[]>('/assets/games/games-menu.json');
+    return this.http.get<GamesMenuItem[]>('/assets/games-menu.json');
   }
 }
 
