@@ -31,7 +31,7 @@ const routes: Routes = [
   },
   {
     path: 'layout',
-    loadChildren: () => import('./games/components/layout/layout-module.module').then(m => m.LayoutModuleModule),
+    loadChildren: () => import('./games/components/layout/layout.component').then(m => m.LayoutComponent)
   },
   /*
   {
@@ -39,18 +39,19 @@ const routes: Routes = [
     loadChildren: () => import('./games/components/board/board.module').then(m => m.BoardModule),
   },*/
 
-  
- /* {
+  /*
+  {
     path: 'juegos',
     loadChildren: () => import('./games/components/board/board-routing.module').then(m => m.BoardRoutingModule),
     children: [
       {
-
+        path: '',
+        redirectTo: 'layout',
       }
     ]
-  },*/
+  },
 
-  
+  */
 
   {
     path: 'juegos',

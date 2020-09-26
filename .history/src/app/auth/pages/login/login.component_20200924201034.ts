@@ -38,10 +38,8 @@ export class LoginComponent {
       if (user) {
         this.checkUserIsVerified(user);
       }
-      else {
-        this.router.navigate(['/pass-email-incorrecto']);
-      }
     } catch (error) {
+      alert();
       console.log(error);
     }
   }

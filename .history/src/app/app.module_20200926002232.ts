@@ -14,24 +14,21 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 // ============================== MODULES ==================================== //
 import { AuthModule } from './auth/auth.module';
 import { LayoutModule } from './layout/layout.module';
-import { GamesModuleModule } from './games/games-module.module';
+
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    // ****************** MYS MODULES ************************ //
     BrowserModule,
     AppRoutingModule,
     AuthModule,
     LayoutModule,
-    GamesModuleModule,
-    // ****************** SERVICES MODULE ************************ //
+    // db -----------------------------------------------//
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     HttpClientModule,
-        // ****************** ANGULAR MODULES ************************ //
     BrowserAnimationsModule
   ],
   providers: [

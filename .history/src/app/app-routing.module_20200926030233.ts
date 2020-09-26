@@ -30,38 +30,34 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'layout',
-    loadChildren: () => import('./games/components/layout/layout-module.module').then(m => m.LayoutModuleModule),
+    path: 'juegos/adivina',
+    loadChildren: () => import('./games/pages/adivina/adivina.module').then(m => m.AdivinaModule),
   },
   /*
   {
     path: 'juegos',
     loadChildren: () => import('./games/components/board/board.module').then(m => m.BoardModule),
   },*/
-
-  
- /* {
+  /*
+  {
     path: 'juegos',
     loadChildren: () => import('./games/components/board/board-routing.module').then(m => m.BoardRoutingModule),
     children: [
       {
-
+        path: '',
+        component: BoardComponent,
       }
     ]
   },*/
 
-  
-
   {
     path: 'juegos',
     loadChildren: () => import('./games/components/board/board.module').then(m => m.BoardModule),
-  },
-  /*
     children: [{
       path: 'adivina',
       loadChildren: () => import('./games/pages/adivina/adivina.module').then(m => m.AdivinaModule),
     }]
-  }*/
+  }
 
 
   /*

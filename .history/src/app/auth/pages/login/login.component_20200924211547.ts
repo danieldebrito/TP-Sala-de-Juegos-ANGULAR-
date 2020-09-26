@@ -39,7 +39,7 @@ export class LoginComponent {
         this.checkUserIsVerified(user);
       }
       else {
-        this.router.navigate(['/pass-email-incorrecto']);
+        alert('usuario o contraseña incorrecta');
       }
     } catch (error) {
       console.log(error);

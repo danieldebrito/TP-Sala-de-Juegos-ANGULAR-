@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
-import { BoardComponent } from './games/components/board/board.component';
+import { HomeComponent } from './layout/home/home.component';
 
 const routes: Routes = [
   {
@@ -29,42 +28,6 @@ const routes: Routes = [
     redirectTo: '/home',
     pathMatch: 'full'
   },
-  {
-    path: 'layout',
-    loadChildren: () => import('./games/components/layout/layout-module.module').then(m => m.LayoutModuleModule),
-  },
-  /*
-  {
-    path: 'juegos',
-    loadChildren: () => import('./games/components/board/board.module').then(m => m.BoardModule),
-  },*/
-
-  
- /* {
-    path: 'juegos',
-    loadChildren: () => import('./games/components/board/board-routing.module').then(m => m.BoardRoutingModule),
-    children: [
-      {
-
-      }
-    ]
-  },*/
-
-  
-
-  {
-    path: 'juegos',
-    loadChildren: () => import('./games/components/board/board.module').then(m => m.BoardModule),
-  },
-  /*
-    children: [{
-      path: 'adivina',
-      loadChildren: () => import('./games/pages/adivina/adivina.module').then(m => m.AdivinaModule),
-    }]
-  }*/
-
-
-  /*
   { path: 'home', component: HomeComponent },
   {
     path: 'juegos',
@@ -79,7 +42,7 @@ const routes: Routes = [
         loadChildren: () => import('./games/pages/adivina/adivina.module').then(m => m.AdivinaModule),
       },
       ]
-  },*/
+  },
 
 ];
 @NgModule({
