@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { BoardComponent } from './games/components/board/board.component';
 import { LayoutComponent } from './games/components/layout/layout.component';
-import { AdivinaComponent } from './games/pages/adivina/adivina.component';
 
 const routes: Routes = [
   {
@@ -39,10 +38,6 @@ const routes: Routes = [
       {
         path: '',
         component: LayoutComponent,
-      },
-      {
-        path: 'adivina',
-        component: AdivinaComponent
       }
     ]
   }
