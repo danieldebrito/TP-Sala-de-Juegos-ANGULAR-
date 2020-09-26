@@ -11,8 +11,6 @@ import { AgilidadModule } from './pages/agilidad/agilidad.module';
 import { PptModule } from './pages/ppt/ppt.module';
 import { TatetiModule } from './pages/tateti/tateti.module';
 import { AnagramaModule } from './pages/anagrama/anagrama.module';
-import { MemotestModule } from './pages/memotest/memotest.module';
-import { CasacaModule } from './pages/casaca/casaca.module';
 
 
 @NgModule({
@@ -25,9 +23,7 @@ import { CasacaModule } from './pages/casaca/casaca.module';
     LayoutModuleModule,
     BoardModule,
     TatetiModule,
-    AnagramaModule,
-    MemotestModule,
-    CasacaModule
+    AnagramaModule
   ],
 })
 export class GamesModuleModule { }

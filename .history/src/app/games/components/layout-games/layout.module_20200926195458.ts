@@ -14,6 +14,7 @@ import { MaterialModule } from 'src/app/material.module';
     LayoutModuleRoutingModule,
     HttpClientModule,
     MaterialModule
-  ]
+  ],
+
 })
 export class LayoutModuleModule { }

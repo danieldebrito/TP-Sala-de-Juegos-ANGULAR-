@@ -61,16 +61,6 @@ const routes: Routes = [
         path: 'anagrama',
         loadChildren: () => import('./games/pages/anagrama/anagrama.module').then(m => m.AnagramaModule),
       }
-      ,
-      {
-        path: 'memotest',
-        loadChildren: () => import('./games/pages/memotest/memotest.module').then(m => m.MemotestModule),
-      }
-      ,
-      {
-        path: 'casaca',
-        loadChildren: () => import('./games/pages/casaca/casaca.module').then(m => m.CasacaModule),
-      }
     ]
   }
 ];

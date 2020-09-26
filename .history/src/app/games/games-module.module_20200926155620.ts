@@ -12,7 +12,6 @@ import { PptModule } from './pages/ppt/ppt.module';
 import { TatetiModule } from './pages/tateti/tateti.module';
 import { AnagramaModule } from './pages/anagrama/anagrama.module';
 import { MemotestModule } from './pages/memotest/memotest.module';
-import { CasacaModule } from './pages/casaca/casaca.module';
 
 
 @NgModule({
@@ -26,8 +25,7 @@ import { CasacaModule } from './pages/casaca/casaca.module';
     BoardModule,
     TatetiModule,
     AnagramaModule,
-    MemotestModule,
-    CasacaModule
+    MemotestModule
   ],
 })
 export class GamesModuleModule { }

@@ -63,13 +63,13 @@ const routes: Routes = [
       }
       ,
       {
-        path: 'memotest',
-        loadChildren: () => import('./games/pages/memotest/memotest.module').then(m => m.MemotestModule),
+        path: 'anagrama',
+        loadChildren: () => import('./games/pages/anagrama/anagrama.module').then(m => m.AnagramaModule),
       }
       ,
       {
-        path: 'casaca',
-        loadChildren: () => import('./games/pages/casaca/casaca.module').then(m => m.CasacaModule),
+        path: 'memotest',
+        loadChildren: () => import('./games/pages/memotest/memotest.module').then(m => m.MemotestModule),
       }
     ]
   }
