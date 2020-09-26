@@ -9,7 +9,6 @@ import { LayoutModuleModule } from './components/layout-games/layout.module';
 import { AdivinaModule } from './pages/adivina/adivina.module';
 import { AgilidadModule } from './pages/agilidad/agilidad.module';
 import { PptModule } from './pages/ppt/ppt.module';
-import { TatetiModule } from './pages/tateti/tateti.module';
 
 
 @NgModule({
@@ -20,8 +19,8 @@ import { TatetiModule } from './pages/tateti/tateti.module';
     AdivinaModule,
     PptModule,
     LayoutModuleModule,
-    BoardModule,
-    TatetiModule
+    BoardModule
   ],
+  declarations: [PptComponent]
 })
 export class GamesModuleModule { }

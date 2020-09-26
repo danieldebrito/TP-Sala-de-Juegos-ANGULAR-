@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './material.module';
 // ============================== HTTP ==================================== //
 import { HttpClientModule } from '@angular/common/http';
 // ============================== SERVICE ==================================== //
@@ -33,9 +32,7 @@ import { GamesModuleModule } from './games/games-module.module';
     AngularFireAuthModule,
     HttpClientModule,
         // ****************** ANGULAR MODULES ************************ //
-    BrowserAnimationsModule,
-    MaterialModule
-
+    BrowserAnimationsModule
   ],
   providers: [
     BaseService

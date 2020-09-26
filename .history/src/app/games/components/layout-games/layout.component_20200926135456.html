@@ -1,0 +1,5 @@
+<li>
+    <ul *ngFor="let item of menuItems | async ; let i=index">
+        <a class="nav-link" [routerLink]="item.redirectTo">{{ item.name }}</a>
+    </ul>
+</li>

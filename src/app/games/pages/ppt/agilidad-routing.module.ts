@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AgilidadComponent } from './agilidad.component';
+import { PptComponent } from './ppt.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: AgilidadComponent
+    component: PptComponent
   }
 ];
 

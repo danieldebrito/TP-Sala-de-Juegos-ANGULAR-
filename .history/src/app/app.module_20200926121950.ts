@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './material.module';
 // ============================== HTTP ==================================== //
 import { HttpClientModule } from '@angular/common/http';
 // ============================== SERVICE ==================================== //
@@ -16,6 +15,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AuthModule } from './auth/auth.module';
 import { LayoutModule } from './layout/layout.module';
 import { GamesModuleModule } from './games/games-module.module';
+import { PptModule } from './games/pages/ppt/ppt.module';
 
 @NgModule({
   declarations: [
@@ -28,14 +28,13 @@ import { GamesModuleModule } from './games/games-module.module';
     AuthModule,
     LayoutModule,
     GamesModuleModule,
+    PptModule,
     // ****************** SERVICES MODULE ************************ //
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     HttpClientModule,
         // ****************** ANGULAR MODULES ************************ //
-    BrowserAnimationsModule,
-    MaterialModule
-
+    BrowserAnimationsModule
   ],
   providers: [
     BaseService

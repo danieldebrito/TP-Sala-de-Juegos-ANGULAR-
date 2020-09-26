@@ -41,20 +41,6 @@ const routes: Routes = [
       {
         path: 'adivina',
         loadChildren: () => import('./games/pages/adivina/adivina.module').then(m => m.AdivinaModule),
-      },
-      {
-        path: 'agilidad',
-        loadChildren: () => import('./games/pages/agilidad/agilidad.module').then(m => m.AgilidadModule),
-      }
-      ,
-      {
-        path: 'ppt',
-        loadChildren: () => import('./games/pages/ppt/ppt.module').then(m => m.PptModule),
-      }
-      ,
-      {
-        path: 'tateti',
-        loadChildren: () => import('./games/pages/tateti/tateti.module').then(m => m.TatetiModule),
       }
     ]
   }

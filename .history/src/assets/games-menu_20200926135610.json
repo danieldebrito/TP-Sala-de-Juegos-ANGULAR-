@@ -1,0 +1,29 @@
+[{
+        "name": "adivina",
+        "redirectTo": "juegos/adivina"
+    },
+    {
+        "name": "agilidad",
+        "redirectTo": "juegos/agilidad"
+    },
+    {
+        "name": "ppt",
+        "redirectTo": "juegos/ppt"
+    },
+    {
+        "name": "tateti",
+        "redirectTo": "juegos/tateti"
+    },
+    {
+        "name": "anagrama",
+        "redirectTo": "juegos/anagrama"
+    },
+    {
+        "name": "memotest",
+        "redirectTo": "juegos/memotest"
+    },
+    {
+        "name": "casaca",
+        "redirectTo": "juegos/casaca"
+    }
+]

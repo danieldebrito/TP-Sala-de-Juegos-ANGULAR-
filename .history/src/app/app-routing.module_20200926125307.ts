@@ -51,11 +51,6 @@ const routes: Routes = [
         path: 'ppt',
         loadChildren: () => import('./games/pages/ppt/ppt.module').then(m => m.PptModule),
       }
-      ,
-      {
-        path: 'tateti',
-        loadChildren: () => import('./games/pages/tateti/tateti.module').then(m => m.TatetiModule),
-      }
     ]
   }
 ];

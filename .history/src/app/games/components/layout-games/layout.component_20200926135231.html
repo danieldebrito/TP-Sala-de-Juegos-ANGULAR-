@@ -1,0 +1,6 @@
+<li>
+    <ul *ngFor="let item of menuItems | async ; let i=index">
+        {{ item.name }}
+        <link rel="stylesheet" [routerLink]="item.redirectTo">
+    </ul>
+</li>
