@@ -20,6 +20,7 @@ export class PptComponent implements OnInit {
     private jugadasService: JugadasService,
     public auth: AuthService) {
     this.juegoNombre = 'Piedra Papel o Tijera';
+    this.jugador = this.auth.nombre;
   }
 
   scores = [0, 0];
