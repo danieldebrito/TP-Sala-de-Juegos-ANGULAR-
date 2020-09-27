@@ -88,7 +88,7 @@ export class AdivinaComponent implements OnInit {
 
   public addJugada(){
     this.jugada.juego = this.juegoNombre;
-    // this.jugada.jugador = 'pipi'; // this.auth.user$;
+    this.jugada.jugador = 'pipi'; // this.auth.user$;
     this.auth.user$.subscribe(
       item => {
         this.jugada.jugador = item.email;

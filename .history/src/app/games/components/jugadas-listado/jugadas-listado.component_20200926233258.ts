@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
-import { Jugada } from 'src/app/class/jugada';
+import { Jugada } from 'src/app/class/jugadas';
 import { JugadasService } from 'src/app/services/jugadas.service';
 
 @Component({
