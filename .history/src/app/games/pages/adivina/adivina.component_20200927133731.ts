@@ -32,9 +32,10 @@ export class AdivinaComponent implements OnInit {
 
   constructor(private jugadasService: JugadasService, public auth: AuthService) {
     this.juegoNombre = 'Adivina el Número';
+    // this.jugador = this.auth.user$;
   }
 
-  public generarnumero(): void {
+  public generarnumero() {
     this.numeroSecreto = Math.floor((Math.random() * 100) + 1);
     this.result = '';
     this.message = '';
@@ -45,7 +46,7 @@ export class AdivinaComponent implements OnInit {
     this.disabledButton = false;
   }
 
-  public verificar(): boolean {
+  public verificar() {
     this.quedan = 'Podes probar';
     this.fue = '¿Como te fue?';
     this.contador++;
@@ -85,8 +86,12 @@ export class AdivinaComponent implements OnInit {
     }
   }
 
-  public addJugada(): void {
+  public addJugada() {
     this.jugada.juego = this.juegoNombre;
+    // this.jugada.jugador = 'pipi'; // this.auth.user$;
+
+    // this.jugada.jugador;
+
     this.jugada.puntaje = this.puntaje;
     this.jugada.resultado = this.resultado;
     this.jugada.fechaHora = this.jugadasService.getfecha();
