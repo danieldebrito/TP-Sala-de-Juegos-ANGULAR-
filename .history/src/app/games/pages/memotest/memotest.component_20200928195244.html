@@ -29,12 +29,12 @@
             </div>
         </div>
     </nav>
-</div>
-<div class="container">
-    <div class="alert alert-info alert-dismissible fade in" role="alert" *ngIf="mostrarAlerta">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <strong>Información!</strong> El juego ha comenzado!
-    </div>
-    <app-cronometro [tiempoMinutos]="nivelSeleccionado ? nivelSeleccionado.tiempoMinutos : null" [juegoIniciado]="juegoIniciado" (tiempoTerminado)="detener()"></app-cronometro>
-    <app-tablero [cantidadFichas]="nivelSeleccionado ? nivelSeleccionado.cantidadFichas : null" *ngIf="juegoIniciado"></app-tablero>
-</div>
+    <div class="container">
+        <div class="alert alert-info alert-dismissible fade in" role="alert" *ngIf="mostrarAlerta">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Información!</strong> El juego ha comenzado!
+        </div>
+        <app-cronometro [tiempoMinutos]="nivelSeleccionado ? nivelSeleccionado.tiempoMinutos : null" [juegoIniciado]="juegoIniciado" (tiempoTerminado)="detener()"></app-cronometro>
+        <app-tablero [cantidadFichas]="nivelSeleccionado ? nivelSeleccionado.cantidadFichas : null" *ngIf="juegoIniciado"></app-tablero>
+        <div>
+        </div>

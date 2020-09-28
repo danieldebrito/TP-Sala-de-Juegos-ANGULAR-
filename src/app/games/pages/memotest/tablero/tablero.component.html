@@ -1,0 +1,7 @@
+<div class="jumbotron">
+  <div class="row">
+    <div class="col-lg-12">
+      <app-tarjeta *ngFor="let tarjeta of tarjetasSeleccionadas" role="button" [infoTarjeta]="tarjeta" [@tarjetasAnimation]="tarjeta"></app-tarjeta>
+    </div>
+  </div>
+</div>

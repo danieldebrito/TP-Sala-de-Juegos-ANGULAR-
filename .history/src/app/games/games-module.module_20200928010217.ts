@@ -17,6 +17,7 @@ import { CasacaModule } from './pages/casaca/casaca.module';
 @NgModule({
   imports: [
     CommonModule,
+    GamesModuleRoutingModule,
     AgilidadModule,
     AdivinaModule,
     PptModule,

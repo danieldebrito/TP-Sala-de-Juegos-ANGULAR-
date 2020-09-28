@@ -8,6 +8,9 @@ import { TableroComponent } from './tablero/tablero.component';
 import { TarjetaService } from './servicios/tarjeta.service';
 import { TarjetaComponent } from './tarjeta/tarjeta.component';
 import { TableroService } from './servicios/tablero.service';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppModule } from 'src/app/app.module';
+
 
 @NgModule({
   declarations: [
@@ -21,6 +24,7 @@ import { TableroService } from './servicios/tablero.service';
     MemotestRoutingModule,
     // BrowserModule,
     FormsModule,
+    AppModule
     // BrowserAnimationsModule
   ],
   providers: [
