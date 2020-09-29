@@ -113,8 +113,6 @@ export class MemotestComponent implements OnInit {
           return;
         }
       }
-      this.resultado = 'Ganó';
-      this.puntaje = 10;
       this.addJugada();
       this.mensaje = 'GANASTE!!!';
     }

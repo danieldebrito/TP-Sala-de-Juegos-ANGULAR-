@@ -167,15 +167,3 @@ img {
         font-size: 11px
     }
 }
-
-* {
-    border-radius: 0px !important;
-}
-
-.btn-group .btn {
-    width: 100%;
-}
-
-.btn-group {
-    width: 100%;
-}

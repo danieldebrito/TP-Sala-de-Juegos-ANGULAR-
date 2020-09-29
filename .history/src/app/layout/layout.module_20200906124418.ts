@@ -7,7 +7,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { AboutComponent } from './about/about.component';
 
 import { LayoutRoutingModule } from './layout-routing.module';
-import { MaterialModule } from '../material.module';
 
 
 @NgModule({
@@ -20,8 +19,7 @@ import { MaterialModule } from '../material.module';
   ],
   imports: [
     CommonModule,
-    LayoutRoutingModule,
-    MaterialModule
+    LayoutRoutingModule
   ],
   exports: [
     NavbarComponent,

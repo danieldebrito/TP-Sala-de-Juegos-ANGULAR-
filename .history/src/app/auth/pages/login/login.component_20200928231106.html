@@ -6,21 +6,24 @@
                 <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" formControlName="email" (click)="errorFalse()" />
+                        <input type="email" class="form-control" formControlName="email" />
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="password" class="form-control" formControlName="password" (click)="errorFalse()" />
+                        <input type="password" class="form-control" formControlName="password" />
                     </div>
-                    <div class="alert alert-danger" role="alert" *ngIf="error">
-                        Usuario o Contraseña Incorrecta
-                    </div>
-                    <button class="btn btn-primary btn-lg btn-block" [disabled]="!loginForm.valid">Login</button>
+                    <button class="btn btn-primary btn-lg btn-block">
+              Login
+            </button>
                 </form>
                 <div class="form-group mt-3">
-                    <button (click)="onGoogleLogin()" class="btn btn-primary btn-lg btn-block">Google </button>
+                    <button (click)="onGoogleLogin()" class="btn btn-primary btn-lg btn-block">
+              Google
+            </button>
                     <div class="form-group mt-3">
-                        <button (click)="cargarLogin()" class="btn btn-primary btn-lg btn-block">Cargar User</button>
+                        <button (click)="onGoogleLogin()" class="btn btn-primary btn-lg btn-block">
+          Cargar User
+        </button>
                     </div>
                     <div class="form-group mt-3">
                         <p>

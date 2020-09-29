@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { FormGroup, FormControl } from '@angular/forms';
 import { AuthService } from 'src/app/auth/auth.service';
 import { Router } from '@angular/router';
 import { User } from 'src/app/auth/models/user.interface';
@@ -14,13 +14,13 @@ export class LoginComponent {
   public error = false;
 
   loginForm = new FormGroup({
-    email: new FormControl('', [Validators.required, Validators.email]),
-    password: new FormControl('', [Validators.required, Validators.minLength(6)]),
+    email: new FormControl(''),
+    password: new FormControl(''),
   });
 
   constructor(private authSvc: AuthService, private router: Router) { }
 
-  async onGoogleLogin(): Promise<void> {
+  async onGoogleLogin() {
     try {
       const user = await this.authSvc.loginGoogle();
       if (user) {
@@ -31,14 +31,14 @@ export class LoginComponent {
     }
   }
 
-  public cargarLogin(): void {
+  public cargarLogin() {
     this.loginForm = new FormGroup({
       email: new FormControl('danieldebrito@outlook.com'),
       password: new FormControl('123456'),
     });
   }
 
-  async onLogin(): Promise<void> {
+  async onLogin() {
     const { email, password } = this.loginForm.value;
     try {
       const user = await this.authSvc.login(email, password);
@@ -54,7 +54,7 @@ export class LoginComponent {
     }
   }
 
-  private checkUserIsVerified(user: User): void {
+  private checkUserIsVerified(user: User) {
     if (user && user.emailVerified) {
       this.router.navigate(['/home']);
     } else if (user) {
@@ -64,7 +64,7 @@ export class LoginComponent {
     }
   }
 
-  public errorFalse(): void {
+  public errorFalse() {
     this.error = false;
   }
 }

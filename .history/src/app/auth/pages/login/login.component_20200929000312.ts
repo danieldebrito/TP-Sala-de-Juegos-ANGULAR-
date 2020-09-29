@@ -65,6 +65,7 @@ export class LoginComponent {
   }
 
   public errorFalse(): void {
+    alert('holiss');
     this.error = false;
   }
 }
