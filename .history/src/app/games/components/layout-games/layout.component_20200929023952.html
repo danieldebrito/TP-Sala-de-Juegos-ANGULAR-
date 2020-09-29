@@ -13,11 +13,9 @@
                         {{ item.descripcion }}
                     </p>
                 </mat-card-content>
-                <div class="container center">
-                    <mat-card-actions>
-                        <a mat-raised-button color="primary" [routerLink]="item.redirectTo">{{ item.name }}</a>
-                    </mat-card-actions>
-                </div>
+                <mat-card-actions>
+                    <a class="weight=100%" mat-raised-button color="primary" [routerLink]="item.redirectTo">{{ item.name }}</a>
+                </mat-card-actions>
             </mat-card>
         </div>
     </div>
